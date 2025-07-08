@@ -15,7 +15,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "typecheck": "tsc --skipLibCheck true--noEmit",
+    "typecheck:full": "tsc --skipLibCheck false --noEmit",
+    "clean": "git clean -xdf node_modules dist .next"
   },
   "dependencies": {
     "next": "^15.3.5",
